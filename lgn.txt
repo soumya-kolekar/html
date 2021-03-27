@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>lgn.html</title>
+</head>
+<body>
+<backgroung color="pink">
+<h1><b>Student Login Form</b></h1>
+   
+    <lablel>Username</label>  Username
+     
+     <label>Password</lable>Password
+<lablel>Login</lable>
+Remember me <lable> Cancel </label>Forgot <a href="password.html">Password</a>
+</body>
+</html>
