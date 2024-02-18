@@ -432,6 +432,8 @@ footer.copyright{
     }
     .banner{
         padding:80px 50px 80px;
+	min-height: unset !important;
+    
     }
     .banner h2{
         font-size: 1.5em;
