@@ -237,15 +237,14 @@ I'm Full Stack Test Engineer
            
         </div>
         <div class="formBx">
-            <form>
-                <h3>
-                    Message  Me
-                </h3>
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-                <textarea name="" id="" rows="5" placeholder="Your Message"></textarea>
-                <input type="submit" value="Send Message">
-            </form>
+         <form id="contact-form" onsubmit="sendEmail(event);">
+    <h3>Message Me</h3>
+    <input type="text" id="name" name="user_name" placeholder="Full Name" required>
+    <input type="email" id="email" name="user_email" placeholder="Email" required>
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+    <input type="submit" value="Send Message">
+        </form>
+            
         </div>  
             
             
