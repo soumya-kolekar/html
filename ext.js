@@ -28,12 +28,10 @@ function sendEmail(event) {
  
     emailjs.send("service_dks8k0w", "template_8yxh4yc", templateParams)
         .then((response) => {
-            console.log(emailjs.user);
             alert("Message sent successfully!"); // Notify user of success
             console.log("Email sent:", response);
         })
         .catch((error) => {
-            console.log(emailjs.user);
             alert("Failed to send message. Please try again later."); // Notify user of failure
             console.error("EmailJS Error:", error);
         });
