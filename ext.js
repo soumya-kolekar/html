@@ -35,6 +35,6 @@ function sendEmail(event) {
         .catch((error) => {
             console.log(emailjs.user);
             alert("Failed to send message. Please try again later."); // Notify user of failure
-            console.error("EmailJS Error:", error.text);
+            console.error("EmailJS Error:", error);
         });
 }
