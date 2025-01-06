@@ -26,7 +26,7 @@ function sendEmail(event) {
     };
 
  
-    emailjs.send("service_dks8k0w", "template_8yxh4yc", templateParams)
+    emailjs.send("service_dks8k0w", "template_ockqhyl", templateParams)
         .then((response) => {
             alert("Message sent successfully!"); // Notify user of success
             console.log("Email sent:", response);
