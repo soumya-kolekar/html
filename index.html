@@ -11,11 +11,33 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
 <script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "6Kp3NfPADkieUziiX",
-      });
-   })();
+    (function(){
+        emailjs.init("6Kp3NfPADkieUziiX"); // Your EmailJS public key
+    })();
+
+    function sendEmail(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const templateParams = {
+            user_name: name,
+            user_email: email,
+            message: message,
+        };
+
+        emailjs.send("service_dks8k0w", "template_ockqhyl", templateParams)
+            .then((response) => {
+                alert("Message sent successfully!");
+                console.log("Email sent:", response);
+            })
+            .catch((error) => {
+                alert("Failed to send message. Please try again later.");
+                console.error("EmailJS Error:", error);
+            });
+    }
 </script>
 </head>
 <body><header>
